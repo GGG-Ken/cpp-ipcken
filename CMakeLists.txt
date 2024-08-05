@@ -3,7 +3,7 @@ project(cpp-ipc)
 
 option(LIBIPC_BUILD_TESTS       "Build all of libipc's own tests."                      OFF)
 option(LIBIPC_BUILD_DEMOS       "Build all of libipc's own demos."                      OFF)
-option(LIBIPC_BUILD_SHARED_LIBS "Build shared libraries (DLLs)."                        OFF)
+option(LIBIPC_BUILD_SHARED_LIBS "Build shared libraries (DLLs)."                        ON) #ken编译成libipc.so,改成OFF则是编译成libipc.a
 option(LIBIPC_USE_STATIC_CRT    "Set to ON to build with static CRT on Windows (/MT)."  OFF)
 
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
